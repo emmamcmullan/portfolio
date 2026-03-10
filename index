@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Emma McMullan</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+<!-- ======================================
+SITE HEADER
+====================================== -->
+
+<header>
+
+<div class="site-title">EMMA MCMULLAN</div>
+
+<nav>
+
+<a href="index.html">About</a>
+<a href="science.html">Science</a>
+<a href="writing.html">Writing</a>
+<a href="more.html">More</a>
+
+</nav>
+
+</header>
+
+
+<!-- ======================================
+MAIN CONTENT
+====================================== -->
+
+<main>
+
+<h1>About Me</h1>
+
+<p>
+Welcome to my portfolio website. This page can introduce who you are,
+your academic interests, and the focus of your work.
+</p>
+
+<p>
+You might describe your scientific interests, writing projects,
+current research, or academic goals here.
+</p>
+
+</main>
+
+</body>
+
+</html>
