@@ -1,5 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* ============================= */
+/* Base page styles */
+/* ============================= */
 
 body {
     font-family: "Source Sans Pro", sans-serif;
@@ -7,44 +10,55 @@ body {
     color: #1c3f60;
     margin: 0;
     padding: 0;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-/* page layout */
+/* ============================= */
+/* Layout */
+/* ============================= */
 
 main {
     max-width: 760px;
-    margin-left: 12%;
+    margin-left: 16%;
     margin-top: 120px;
 }
 
-/* name */
+/* ============================= */
+/* Site title */
+/* ============================= */
 
 .site-title {
     font-size: 72px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    margin-left: 4%;
 }
 
-/* nav */
+/* ============================= */
+/* Navigation */
+/* ============================= */
 
 nav {
     margin-top: 10px;
     margin-bottom: 80px;
+    margin-left: 4%;
 }
 
 nav a {
-    margin-right: 18px;
+    margin-right: 22px;
     font-size: 18px;
     text-decoration: none;
     color: black;
+    font-weight: 400;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* headings */
+/* ============================= */
+/* Headings */
+/* ============================= */
 
 h1 {
     font-size: 32px;
@@ -52,7 +66,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* body text */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/* ============================= */
+/* Body text */
+/* ============================= */
 
 p {
     font-size: 18px;
@@ -60,7 +82,9 @@ p {
     margin-bottom: 18px;
 }
 
-/* links */
+/* ============================= */
+/* Links */
+/* ============================= */
 
 a {
     color: gray;
@@ -71,7 +95,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* writing list */
+/* ============================= */
+/* Lists */
+/* ============================= */
 
 ul {
     padding-left: 18px;
@@ -81,7 +107,58 @@ li {
     margin-bottom: 12px;
 }
 
-/* mobile */
+/* ============================= */
+/* Publication / Research Cards */
+/* ============================= */
+
+.research-item {
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 6px solid #1c3f60;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* keeps cards equal height inside grid */
+
+.research-item {
+    height: 100%;
+}
+
+/* ============================= */
+/* Abstract dropdown */
+/* ============================= */
+
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+details p {
+    margin-top: 10px;
+}
+
+/* ============================= */
+/* Grid for writing cards */
+/* ============================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
 
 @media (max-width: 700px) {
 
@@ -93,131 +170,14 @@ li {
 
     .site-title {
         font-size: 46px;
+        margin-left: 0;
     }
 
-}
+    nav {
+        margin-left: 0;
+    }
 
-.publication {
-    margin-bottom: 30px;
-}
-
-
-/* Card style for research items */
-.research-item {
-    max-width: 720px;            /* card width */
-    margin: 30px auto;           /* centered horizontally */
-    padding: 25px 30px;          /* inner spacing */
-    background-color: #ffffff;   /* card background */
-    border-radius: 12px;         /* rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
-    text-align: left;            /* left-aligned text */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-left: 6px solid ##1c3f60; /* subtle accent on left */
-}
-
-/* Hover effect: lift card slightly and intensify shadow */
-.research-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
-
-/* Abstract toggle styling */
-details summary {
-    cursor: pointer;
-    font-weight: 600;
-    margin-bottom: 10px;
-    list-style: none; /* removes default triangle in some browsers */
-}
-
-/* Optional: add subtle accent color to summary arrow on hover */
-details[open] summary::marker,
-details summary::marker {
-    color: #1c3f60; /* matches left accent */
-}
-
-details p {
-    margin-top: 10px;
-}
-
-
-/* Card style for research items */
-.research-item {
-    max-width: 720px;            /* card width */
-    margin: 30px auto;           /* centered horizontally */
-    padding: 25px 30px;          /* inner spacing */
-    background-color: #f3f6fa;   /* card background */
-    border-radius: 12px;         /* rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
-    text-align: left;            /* left-aligned text */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-left: 6px solid #1c3f60; /* subtle accent on left */
-}
-
-/* Hover effect: lift card slightly and intensify shadow */
-.research-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
-
-/* Abstract toggle styling */
-details summary {
-    cursor: pointer;
-    font-weight: 600;
-    margin-bottom: 10px;
-    list-style: none; /* removes default triangle in some browsers */
-}
-
-/* Accent color for summary marker */
-details[open] summary::marker,
-details summary::marker {
-    color: #1c3f60; /* matches left accent */
-}
-
-details p {
-    margin-top: 10px;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-top: 20px;
-}
-
-/* Card styling */
-.research-item {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  background: #fafafa;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.research-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/* Mobile responsive */
-@media (max-width: 700px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  list-style: none;
-  padding: 0;
-}
-
-.card-grid li {
-  border: 1px solid #ddd;
-  padding: 18px;
-  border-radius: 6px;
-  background: #fafafa;
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
 }
