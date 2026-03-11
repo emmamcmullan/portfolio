@@ -1,15 +1,15 @@
-/* ---------------- Retro / 70s Style Portfolio ---------------- */
+/* ---------------- Retro / 70s USGS / 2001: A Space Odyssey Inspired Portfolio ---------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
 
 body {
-    background-color: #eae4d8;      /* retro beige */
+    background-color: #eae4d8;      /* retro beige background */
     color: #000000;                  /* black text */
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;                /* lighter body text */
-    font-size: 18px;                 /* slightly larger text */
+    font-weight: 300;                /* light body text */
+    font-size: 18px;                 /* slightly larger for readability */
     letter-spacing: 0em;             /* tight letters */
-    line-height: 1.2;                /* tight line spacing */
+    line-height: 1.25;               /* slightly tighter line spacing */
     margin: 0;
     padding: 0;
     text-align: justify;
@@ -22,11 +22,12 @@ header {
 
 .site-title {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 700;                /* bold title */
-    font-size: 72px;
-    letter-spacing: -0.02em;         /* tighter spacing */
-    line-height: 1.1;
-    margin-bottom: 40px;
+    font-weight: 900;                /* extra bold for monolithic feel */
+    font-size: 84px;                 /* large impactful title */
+    letter-spacing: -0.03em;         /* tight letters */
+    line-height: 1.05;               /* stacked compact look */
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 nav {
@@ -39,21 +40,21 @@ nav {
 
 nav a {
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;                /* semi-bold for nav */
+    font-size: 20px;
+    letter-spacing: -0.01em;         /* slightly tight */
+    text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline;      /* underline only on hover */
 }
 
 main {
-    max-width: 600px;               /* narrower for less side spacing */
-    width: 90%;
+    max-width: 600px;               /* narrow for less side spacing */
+    width: 85%;
     margin: auto;
     padding: 20px;
 }
@@ -61,10 +62,12 @@ main {
 h1, h2, h3 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;               /* bold headers */
-    letter-spacing: -0.02em;        /* tighter letters */
-    line-height: 1.1;               /* compact line spacing */
+    font-size: 36px;                /* smaller than site title, large enough to stand out */
+    letter-spacing: -0.025em;       /* tight letters */
+    line-height: 1.1;               /* compact spacing */
     text-align: center;
-    margin-bottom: 20px;
+    text-transform: uppercase;      /* monolithic feel */
+    margin-bottom: 25px;
 }
 
 p {
@@ -75,9 +78,14 @@ p {
     font-size: 18px;
 }
 
+em {
+    font-style: italic;             /* italic for organization names */
+    font-weight: 400;               /* normal weight so it stands out subtly */
+}
+
 a {
-    color: inherit;                 /* same as text */
-    text-decoration: none;
+    color: inherit;                 /* same as surrounding text */
+    text-decoration: none;          /* no underline normally */
 }
 
 a:hover {
