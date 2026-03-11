@@ -100,3 +100,41 @@ li {
 .publication {
     margin-bottom: 30px;
 }
+
+
+/* Card style for research items */
+.research-item {
+    max-width: 720px;            /* card width */
+    margin: 30px auto;           /* centered horizontally */
+    padding: 25px 30px;          /* inner spacing */
+    background-color: #ffffff;   /* card background */
+    border-radius: 12px;         /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
+    text-align: left;            /* left-aligned text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 6px solid #ff8f00; /* subtle accent on left */
+}
+
+/* Hover effect: lift card slightly and intensify shadow */
+.research-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Abstract toggle styling */
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+    list-style: none; /* removes default triangle in some browsers */
+}
+
+/* Optional: add subtle accent color to summary arrow on hover */
+details[open] summary::marker,
+details summary::marker {
+    color: #ff8f00; /* matches left accent */
+}
+
+details p {
+    margin-top: 10px;
+}
