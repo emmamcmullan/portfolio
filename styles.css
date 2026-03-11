@@ -14,24 +14,29 @@ body {
 }
 
 /* ============================= */
-/* Layout */
+/* Global layout container */
 /* ============================= */
 
+header,
 main {
     max-width: 760px;
     margin-left: 16%;
-    margin-top: 120px;
 }
 
 /* ============================= */
-/* Site title */
+/* Header */
 /* ============================= */
+
+header {
+    margin-top: 80px;
+}
+
+/* Site title */
 
 .site-title {
     font-size: 72px;
     font-weight: 700;
     margin-bottom: 12px;
-    margin-left: 4%;
 }
 
 /* ============================= */
@@ -41,7 +46,8 @@ main {
 nav {
     margin-top: 10px;
     margin-bottom: 80px;
-    margin-left: 4%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 nav a {
@@ -54,6 +60,14 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* ============================= */
+/* Main content */
+/* ============================= */
+
+main {
+    margin-top: 40px;
 }
 
 /* ============================= */
@@ -108,7 +122,7 @@ li {
 }
 
 /* ============================= */
-/* Publication / Research Cards */
+/* Research / writing cards */
 /* ============================= */
 
 .research-item {
@@ -118,6 +132,7 @@ li {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     border-left: 6px solid #1c3f60;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
 }
 
 .research-item:hover {
@@ -125,14 +140,8 @@ li {
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-/* keeps cards equal height inside grid */
-
-.research-item {
-    height: 100%;
-}
-
 /* ============================= */
-/* Abstract dropdown */
+/* Abstract toggle */
 /* ============================= */
 
 details summary {
@@ -146,7 +155,7 @@ details p {
 }
 
 /* ============================= */
-/* Grid for writing cards */
+/* Grid layout for writing cards */
 /* ============================= */
 
 .card-grid {
@@ -162,19 +171,22 @@ details p {
 
 @media (max-width: 700px) {
 
+    header,
     main {
         margin-left: 8%;
         margin-right: 8%;
-        margin-top: 80px;
+    }
+
+    header {
+        margin-top: 60px;
     }
 
     .site-title {
         font-size: 46px;
-        margin-left: 0;
     }
 
     nav {
-        margin-left: 0;
+        margin-bottom: 50px;
     }
 
     .card-grid {
