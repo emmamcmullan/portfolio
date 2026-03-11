@@ -204,3 +204,20 @@ details p {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+}
+
+.card-grid li {
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  background: #fafafa;
+}
