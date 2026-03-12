@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -13,7 +12,8 @@
     height: 790px;
     display: flex;
     justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically */
+    align-items: flex-start; /* align to top */
+    padding-top: 40px;
   }
 
   .hero h1 {
@@ -21,21 +21,39 @@
     font-weight: 700;        /* Bold */
     font-size: 152px;
     line-height: 1.4;
-    letter-spacing: -0.094em; /* Approximation for -94 letter spacing in px relative to font size */
+    letter-spacing: -0.094em;
     color: #222222;
     margin: 0;
   }
 
-  /* Optional: make it responsive for smaller screens */
-  @media (max-width: 1200px) {
-    .hero h1 {
-      font-size: 100px;
-    }
+  /* Right-aligned text box below hero */
+  .text-box {
+    display: flex;
+    justify-content: flex-end; /* align box to right of page */
+    padding: 20px 40px;
+    background-color: #ffffff;
   }
+
+  .text-box p {
+    font-family: 'Aileron', sans-serif;
+    font-weight: 700;          /* Bold */
+    font-size: 43.6px;
+    line-height: 0.81;
+    letter-spacing: -0.094em;  /* Approx for -94 letter spacing */
+    color: #222222;
+    margin: 0;
+    text-align: right;          /* right justify inside box */
+  }
+
+  .text-box p span {
+    display: block;            /* force each word onto its own line */
+  }
+
+  /* Optional: responsive adjustments */
   @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 60px;
-      line-height: 1.2;
+    .text-box p {
+      font-size: 30px;
+      line-height: 0.9;
     }
   }
 </style>
@@ -46,5 +64,15 @@
   <h1>emma mcmullan</h1>
 </div>
 
+<div class="text-box">
+  <p>
+    <span>sci</span>
+    <span>comms</span>
+    <span>sci</span>
+    <span>policy</span>
+  </p>
+</div>
+
 </body>
 </html>
+
