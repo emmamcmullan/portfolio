@@ -153,42 +153,26 @@
   background-color: #ffffff;
 }
 
-/* section containing text + image */
+/* container holding text and image */
 .text-image-section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; 
   align-items: flex-start;
-  gap: 40px;              /* space between image and text column */
-  margin-top: 50px;       /* move section vertically */
-  padding-right: 40px;    /* distance from right edge */
+  gap: 30px;           /* space between text and image */
+  padding-right: 40px;
+  margin-top: 40px;
 }
 
-/* stack text elements vertically */
+/* stack text vertically */
 .right-text-column {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* right justify everything */
-  gap: 14px;             /* space between elements */
+  align-items: flex-end;
+  gap: 12px;
 }
 
-/* main sci comms sci policy text */
-.text-box-1 p {
-  font-family: 'Aileron', sans-serif;
-  font-weight: 700;
-  font-size: 43.6px;
-  line-height: 0.81;
-  letter-spacing: -0.094em;
-  color: #222222;
-  margin: 0;
-  text-align: left;
-}
-
-.text-box-1 span {
-  display: block;
-}
-
-/* and much, much more text */
-.text-box-2 {
+/* second line text */
+.more-text {
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 16.5px;
@@ -221,10 +205,13 @@
 
 /* image */
 .emma-image {
-  width: 600px;   /* change size freely */
+  width: 300px;
   height: auto;
-}
 
+  position: relative;
+  top: 0px;     /* move image up/down */
+  left: 0px;    /* move image left/right */
+}
 /* ============================= */
 /* Base page styles */
 /* ============================= */
