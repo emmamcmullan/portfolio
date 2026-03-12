@@ -205,7 +205,7 @@
   background-color: #222222;   /* dark gray background */
   width: 100%;
   height: auto;                /* Automatically adjust height */
-  min-height: 755px;           /* can adjust if you want taller/shorter */
+  min-height: 655px;           /* can adjust if you want taller/shorter */
 }
 
 /* ABOUT TEXT BOX (moveable) */
@@ -253,7 +253,7 @@
 .emma-photo {
   position: absolute;
   right: 280px;
-  top: 430px;
+  top: 230px;
   width: 600px;
   height: auto;
 }
