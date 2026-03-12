@@ -144,13 +144,12 @@
 /* ============================= */
 /* text boxes */
 /* ============================= */
+
 /* SCI COMMS SCI POLICY */
 .sci-box {
   position: absolute;
-
-  right: 847px;   /* move left/right */
-  top: 338px;    /* move up/down */
-
+  right: 847px;
+  top: 338px;
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 43.6px;
@@ -167,10 +166,8 @@
 /* AND MUCH MORE TEXT */
 .more-box {
   position: absolute;
-
   right: 847px;
   top: 550px;
-
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 16.5px;
@@ -183,86 +180,58 @@
 /* CONTACT BUTTON */
 .contact-box {
   position: absolute;
-
   right: 847px;
   top: 601px;
-
   width: 147px;
   height: 43px;
   background-color: #222222;
   border-radius: 12px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 16.5px;
   line-height: 0.81;
   letter-spacing: -0.055em;
   color: white;
-
   text-decoration: none;
 }
 
 /* PHOTO */
 .emma-photo {
   position: absolute;
-
   right: 200px;
   top: 330px;
-
   width: 600px;
   height: auto;
-}
 }
 
 /* ABOUT SECTION BACKGROUND */
 .about-section {
-  position: relative;          /* allows absolute positioning inside */
-  background-color: #222222;   /* dark gray background */
+  position: relative;
+  background-color: #222222;
   width: 100%;
-  min-height: 755px;           /* can adjust if you want taller/shorter */
+  min-height: 755px;
 }
 
-/* ABOUT TEXT BOX (moveable) */
+/* ABOUT TEXT BOX */
 .about-text-box {
-  position: absolute;          /* now you can move it freely */
-  top: 50px;                   /* adjust vertical position */
-  left: 50%;                   /* start in middle horizontally */
-  transform: translateX(-50%); /* center horizontally */
-  
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 1275px;
-  max-width: 90vw;             /* responsive max width */
-
+  max-width: 90vw;
   font-family: 'Aileron', sans-serif;
   font-size: 20.5px;
   line-height: 1.4;
   letter-spacing: 0px;
   text-align: justify;
   color: #e4e2d9;
-
 }
 
 /* Bold intro */
 .about-text-box .intro {
   font-weight: 700;
-  margin-bottom: 20px;
-}
-
-/* Paragraph spacing */
-.about-text-box p {
-  margin-bottom: 18px;
-}
-
-/* Links */
-.about-text-box a {
-  color: #e4e2d9;
-  text-decoration: none;
-}
-
-.about-text-box a:hover,
-.about-text-box a:active {
-  text-decoration: underline;
-}
+  margin-bottom
