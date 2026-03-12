@@ -181,7 +181,7 @@
 .contact-box {
   position: absolute;
   right: 847px;
-  top: 520px;
+  top: 540px;
   width: 147px;
   height: 43px;
   background-color: #222222;
@@ -211,7 +211,7 @@
 /* ABOUT TEXT BOX (moveable) */
 .about-text-box {
   position: absolute;          /* now you can move it freely */
-  top: 400px;                   /* move down by 800px */
+  top: 50px;                   /* move down by 800px */
   left: 50%;                   /* start in middle horizontally */
   transform: translateX(-50%); /* center horizontally */
   text-align: justify;
@@ -252,7 +252,7 @@
 /* PHOTO */
 .emma-photo {
   position: absolute;
-  right: 300px;
+  right: 280px;
   top: 430px;
   width: 600px;
   height: auto;
