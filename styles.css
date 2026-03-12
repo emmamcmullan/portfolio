@@ -234,4 +234,21 @@
 /* Bold intro */
 .about-text-box .intro {
   font-weight: 700;
-  margin-bottom
+  margin-bottom: 20px;
+}
+
+/* Paragraph spacing */
+.about-text-box p {
+  margin-bottom: 18px;
+}
+
+/* Links */
+.about-text-box a {
+  color: #e4e2d9;
+  text-decoration: none;
+}
+
+.about-text-box a:hover,
+.about-text-box a:active {
+  text-decoration: underline;
+}
