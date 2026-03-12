@@ -167,7 +167,7 @@
 .more-box {
   position: absolute;
   right: 847px;
-  top: 550px;
+  top: 500px;
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 16.5px;
@@ -181,7 +181,7 @@
 .contact-box {
   position: absolute;
   right: 847px;
-  top: 601px;
+  top: 551px;
   width: 147px;
   height: 43px;
   background-color: #222222;
@@ -211,10 +211,11 @@
 /* ABOUT TEXT BOX (moveable) */
 .about-text-box {
   position: absolute;          /* now you can move it freely */
-  top: 800px;                   /* move down by 800px */
+  top: 400px;                   /* move down by 800px */
   left: 50%;                   /* start in middle horizontally */
   transform: translateX(-50%); /* center horizontally */
-  
+  text-align: justify;
+   
   width: 1275px;
   max-width: 90vw;             /* responsive max width */
 
