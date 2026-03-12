@@ -140,6 +140,20 @@
   font-weight: 900;
   font-style: italic;
 }
+
+/* ============================= */
+/* text boxes */
+/* ============================= */
+.text-box {
+  position: absolute;
+  top: 338px;       /* distance from top of page */
+  right: 841px;      /* distance from right edge */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+
+
 /* ============================= */
 /* Base page styles */
 /* ============================= */
