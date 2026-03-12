@@ -210,53 +210,59 @@
 .emma-photo {
   position: absolute;
 
-  right: 600px;
+  right: 200px;
   top: 330px;
 
-  width: 300px;
+  width: 600px;
   height: auto;
 }
 }
 
-/* DARK BACKGROUND SECTION */
+/* ABOUT SECTION BACKGROUND */
 .about-section {
-  background-color: #222222; /* dark gray background */
+  position: relative;          /* allows absolute positioning inside */
+  background-color: #222222;   /* dark gray background */
   width: 100%;
-  min-height: 755px;
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
-  padding: 60px 20px;      /* padding so text doesn’t touch edges */
-  box-sizing: border-box;
+  min-height: 755px;           /* can adjust if you want taller/shorter */
 }
 
-.about-text {
+/* ABOUT TEXT BOX (moveable) */
+.about-text-box {
+  position: absolute;          /* now you can move it freely */
+  top: 50px;                   /* adjust vertical position */
+  left: 50%;                   /* start in middle horizontally */
+  transform: translateX(-50%); /* center horizontally */
+  
   width: 1275px;
-  max-width: 90vw;        /* responsive max width */
+  max-width: 90vw;             /* responsive max width */
+
   font-family: 'Aileron', sans-serif;
-  font-size: 20.5px;       /* requested size */
-  letter-spacing: 0px;     /* requested letter spacing */
-  line-height: 1.4;        /* requested line spacing */
+  font-size: 20.5px;
+  line-height: 1.4;
+  letter-spacing: 0px;
   text-align: justify;
-  color: #e4e2d9;          /* your requested text color */
+  color: #e4e2d9;
+
 }
 
-.about-text .intro {
-  font-weight: 700;         /* bold intro line */
+/* Bold intro */
+.about-text-box .intro {
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-.about-text p {
+/* Paragraph spacing */
+.about-text-box p {
   margin-bottom: 18px;
 }
 
-.about-text a {
-  color: #e4e2d9;           /* keep same color as text */
+/* Links */
+.about-text-box a {
+  color: #e4e2d9;
   text-decoration: none;
 }
 
-.about-text a:hover,
-.about-text a:active {
+.about-text-box a:hover,
+.about-text-box a:active {
   text-decoration: underline;
 }
-
