@@ -198,31 +198,26 @@
   text-decoration: none;
 }
 
-/* PHOTO */
-.emma-photo {
-  position: absolute;
-  right: 200px;
-  top: 330px;
-  width: 600px;
-  height: auto;
-}
 
 /* ABOUT SECTION BACKGROUND */
 .about-section {
-  position: relative;
-  background-color: #222222;
+  position: relative;          /* allows absolute positioning inside */
+  background-color: #222222;   /* dark gray background */
   width: 100%;
-  min-height: 755px;
+  height: auto;                /* Automatically adjust height */
+  min-height: 755px;           /* can adjust if you want taller/shorter */
 }
 
-/* ABOUT TEXT BOX */
+/* ABOUT TEXT BOX (moveable) */
 .about-text-box {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;          /* now you can move it freely */
+  top: 800px;                   /* move down by 800px */
+  left: 50%;                   /* start in middle horizontally */
+  transform: translateX(-50%); /* center horizontally */
+  
   width: 1275px;
-  max-width: 90vw;
+  max-width: 90vw;             /* responsive max width */
+
   font-family: 'Aileron', sans-serif;
   font-size: 20.5px;
   line-height: 1.4;
@@ -251,4 +246,13 @@
 .about-text-box a:hover,
 .about-text-box a:active {
   text-decoration: underline;
+}
+
+/* PHOTO */
+.emma-photo {
+  position: absolute;
+  right: 200px;
+  top: 330px;
+  width: 600px;
+  height: auto;
 }
