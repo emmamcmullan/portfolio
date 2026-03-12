@@ -144,35 +144,33 @@
 /* ============================= */
 /* text boxes */
 /* ============================= */
-.text-box {
+/* SCI COMMS SCI POLICY */
+.sci-box {
   position: absolute;
-  top: 338px;       /* distance from top of page */
-  right: 841px;      /* distance from right edge */
-  display: flex;
-  justify-content: flex-end;
-  background-color: #ffffff;
+
+  right: 40px;   /* move left/right */
+  top: 820px;    /* move up/down */
+
+  font-family: 'Aileron', sans-serif;
+  font-weight: 700;
+  font-size: 43.6px;
+  line-height: 0.81;
+  letter-spacing: -0.094em;
+  color: #222222;
+  text-align: right;
 }
 
-/* container holding text and image */
-.text-image-section {
-  display: flex;
-  justify-content: flex-end; 
-  align-items: flex-start;
-  gap: 30px;           /* space between text and image */
-  padding-right: 40px;
-  margin-top: 40px;
+.sci-box span {
+  display: block;
 }
 
-/* stack text vertically */
-.right-text-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
-}
+/* AND MUCH MORE TEXT */
+.more-box {
+  position: absolute;
 
-/* second line text */
-.more-text {
+  right: 40px;
+  top: 980px;
+
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
   font-size: 16.5px;
@@ -182,8 +180,13 @@
   text-align: right;
 }
 
-/* contact button */
-.contact-button {
+/* CONTACT BUTTON */
+.contact-box {
+  position: absolute;
+
+  right: 40px;
+  top: 1020px;
+
   width: 147px;
   height: 43px;
   background-color: #222222;
@@ -198,19 +201,21 @@
   font-size: 16.5px;
   line-height: 0.81;
   letter-spacing: -0.055em;
-  color: #ffffff;
+  color: white;
 
   text-decoration: none;
 }
 
-/* image */
-.emma-image {
+/* PHOTO */
+.emma-photo {
+  position: absolute;
+
+  right: 220px;
+  top: 820px;
+
   width: 300px;
   height: auto;
-
-  position: relative;
-  top: 0px;     /* move image up/down */
-  left: 0px;    /* move image left/right */
+}
 }
 /* ============================= */
 /* Base page styles */
