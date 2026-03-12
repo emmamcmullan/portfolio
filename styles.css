@@ -217,6 +217,76 @@
   height: auto;
 }
 }
+
+/* DARK BACKGROUND SECTION */
+
+.about-section {
+
+  background-color: #222222;
+
+  min-height: 755px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 40px;
+}
+
+
+/* BIO TEXT BOX */
+
+.about-text {
+
+  width: 1275px;
+  max-width: 90vw;
+
+  font-family: 'Aileron', sans-serif;
+  font-size: 20.5px;
+
+  line-height: 1.4;
+  letter-spacing: 0px;
+
+  text-align: justify;
+
+  color: #ffffff;
+}
+
+
+/* FIRST LINE */
+
+.about-text .intro {
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+
+/* PARAGRAPH SPACING */
+
+.about-text p {
+
+  margin-bottom: 18px;
+}
+
+
+/* LINKS */
+
+.about-text a {
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* HOVER + CLICK UNDERLINE */
+
+.about-text a:hover,
+.about-text a:active {
+
+  text-decoration: underline;
+}
 /* ============================= */
 /* Base page styles */
 /* ============================= */
