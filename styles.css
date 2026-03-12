@@ -181,7 +181,7 @@
 .contact-box {
   position: absolute;
   right: 847px;
-  top: 551px;
+  top: 520px;
   width: 147px;
   height: 43px;
   background-color: #222222;
@@ -252,8 +252,8 @@
 /* PHOTO */
 .emma-photo {
   position: absolute;
-  right: 200px;
-  top: 330px;
+  right: 300px;
+  top: 430px;
   width: 600px;
   height: auto;
 }
