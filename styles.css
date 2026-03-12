@@ -153,6 +153,77 @@
   background-color: #ffffff;
 }
 
+/* section containing text + image */
+.text-image-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;              /* space between image and text column */
+  margin-top: 50px;       /* move section vertically */
+  padding-right: 40px;    /* distance from right edge */
+}
+
+/* stack text elements vertically */
+.right-text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* right justify everything */
+  gap: 14px;             /* space between elements */
+}
+
+/* main sci comms sci policy text */
+.text-box-1 p {
+  font-family: 'Aileron', sans-serif;
+  font-weight: 700;
+  font-size: 43.6px;
+  line-height: 0.81;
+  letter-spacing: -0.094em;
+  color: #222222;
+  margin: 0;
+  text-align: left;
+}
+
+.text-box-1 span {
+  display: block;
+}
+
+/* and much, much more text */
+.text-box-2 {
+  font-family: 'Aileron', sans-serif;
+  font-weight: 700;
+  font-size: 16.5px;
+  line-height: 0.81;
+  letter-spacing: -0.055em;
+  color: #222222;
+  text-align: right;
+}
+
+/* contact button */
+.contact-button {
+  width: 147px;
+  height: 43px;
+  background-color: #222222;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Aileron', sans-serif;
+  font-weight: 700;
+  font-size: 16.5px;
+  line-height: 0.81;
+  letter-spacing: -0.055em;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+/* image */
+.emma-image {
+  width: 600px;   /* change size freely */
+  height: auto;
+}
 
 /* ============================= */
 /* Base page styles */
