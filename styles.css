@@ -148,8 +148,8 @@
 .sci-box {
   position: absolute;
 
-  right: 40px;   /* move left/right */
-  top: 820px;    /* move up/down */
+  right: 847px;   /* move left/right */
+  top: 338px;    /* move up/down */
 
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
@@ -168,8 +168,8 @@
 .more-box {
   position: absolute;
 
-  right: 40px;
-  top: 980px;
+  right: 847px;
+  top: 550px;
 
   font-family: 'Aileron', sans-serif;
   font-weight: 700;
@@ -184,8 +184,8 @@
 .contact-box {
   position: absolute;
 
-  right: 40px;
-  top: 1020px;
+  right: 847px;
+  top: 601px;
 
   width: 147px;
   height: 43px;
@@ -210,8 +210,8 @@
 .emma-photo {
   position: absolute;
 
-  right: 220px;
-  top: 820px;
+  right: 600px;
+  top: 330px;
 
   width: 300px;
   height: auto;
