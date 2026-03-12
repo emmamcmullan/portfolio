@@ -1,3 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emma McMullan Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Top hero section */
+  .hero {
+    background-color: #ffffff;
+    height: 790px;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: flex-start; /* align to top */
+    padding-top: 40px;
+  }
+
+  .hero h1 {
+    font-family: 'Aileron', sans-serif;
+    font-weight: 700;        /* Bold */
+    font-size: 152px;
+    line-height: 1.4;
+    letter-spacing: -0.094em;
+    color: #222222;
+    margin: 0;
+  }
+
+  /* Right-aligned text box below hero */
+  .text-box {
+    display: flex;
+    justify-content: flex-end; /* align box to right of page */
+    padding: 20px 40px;
+    background-color: #ffffff;
+  }
+
+  .text-box p {
+    font-family: 'Aileron', sans-serif;
+    font-weight: 700;          /* Bold */
+    font-size: 43.6px;
+    line-height: 0.81;
+    letter-spacing: -0.094em;  /* Approx for -94 letter spacing */
+    color: #222222;
+    margin: 0;
+    text-align: right;          /* right justify inside box */
+  }
+
+  .text-box p span {
+    display: block;            /* force each word onto its own line */
+  }
+
+  /* Optional: responsive adjustments */
+  @media (max-width: 768px) {
+    .text-box p {
+      font-size: 30px;
+      line-height: 0.9;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>emma mcmullan</h1>
+</div>
+
+<div class="sci-box">
+  <span>sci</span>
+  <span>comms</span>
+  <span>sci</span>
+  <span>policy</span>
+</div>
+
+<div class="more-box">
+  <span>and much,</span>
+  <span>much more!</span>
+</div>
+
+<a href="mailto:emmamcmullan257@gmail.com" class="contact-box">
+  contact me!
+</a>
+
+<img src="assets/emma_sit.png" class="emma-photo">
+
 <div class="about-section">
   <div class="about-text-box">
     <p class="intro">I’m Emma!</p>
@@ -25,3 +109,6 @@
       <a href="https://womeninstem.org/" target="_blank">Women in STEM</a>.</p>
   </div>
 </div>
+</body>
+</html>
+
